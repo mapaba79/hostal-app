@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Hostel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<body onload="login()">
+  <div id="conteudo" style="display: none;">
+    <h1>Controle de Hostel</h1>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+      <button onclick="verHistorico()">Ver Histórico</button>
+      <button onclick="buscarHospede()">Buscar Hóspede</button>
+      <button onclick="renderTudo()">Mostrar Tudo</button>
+    </div>
+
+    <div id="quartos-container"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
